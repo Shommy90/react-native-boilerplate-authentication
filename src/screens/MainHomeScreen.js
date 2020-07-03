@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Text, StyleSheet, Button, View, TouchableOpacity } from "react-native";
+import { Text, Button, View, TouchableOpacity } from "react-native";
 
 import { AuthContext } from "../context/ContextProvider";
 
@@ -25,7 +25,6 @@ const HomeScreen = ({ navigation }) => {
         <Button
           title="logout"
           onPress={() => {
-            console.log("LOGOUT");
             dispatch({ type: "REMOVE_TOKEN", payload: null });
           }}
         />
@@ -33,11 +32,5 @@ const HomeScreen = ({ navigation }) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 30,
-  },
-});
 
 export default HomeScreen;

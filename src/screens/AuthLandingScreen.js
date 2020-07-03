@@ -13,7 +13,6 @@ const AuthLandingScreen = ({ navigation }) => {
         <Button
           title="Login"
           onPress={() => {
-            console.log("LOGIN");
             dispatch({ type: "SET_TOKEN", payload: "tokennn" });
             // navigation.navigate("Login");
           }}
